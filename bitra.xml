@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- GitHub -->
+  <remote  name="gh"
+           fetch="https://github.com" />
+
+  <!-- GitHub (PalyrimOS Devices) -->
+  <remote  name="devices"
+           fetch="https://github.com/PalyrimOS-Devices"
+           revision="refs/heads/thirteen" />
+
+  <!-- bitra repos -->
+  <project path="device/realme/bitra" name="device_realme_bitra" remote="devices" />
+  <project path="device/realme/sm8250-common" name="device_realme_sm8250-common" remote="devices" />
+  <project path="vendor/realme/bitra" name="vendor_realme_bitra" remote="devices" />
+  <project path="vendor/realme/sm8250-common" name="vendor_realme_sm8250-common" remote="devices" />
+  <project path="hardware/oplus" name="hardware_oplus" remote="devices" />
+
+  <project path="kernel/realme/sm8250" name="realme-sm8250-devs/android_kernel_realme_sm8250" remote="gh" revision="arrow-13.0" />
+
+</manifest>
